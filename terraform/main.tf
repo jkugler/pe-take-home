@@ -142,7 +142,6 @@ resource "aws_instance" "web" {
   instance_type               = "t2.medium"
   subnet_id                   = aws_subnet.private.id
   user_data                   = data.template_file.init.rendered
-  #key_name                    = "hosanna"
   vpc_security_group_ids      = [aws_security_group.web.id]
   # These were being REALLY slow coming up for some reason
   # Didn't want package retreival to fail
@@ -151,18 +150,6 @@ resource "aws_instance" "web" {
     Name = "hedge-web"
   }
 }
-
-#resource "aws_instance" "bastion_host" {
-  #ami = "ami-07dd19a7900a1f049"
-  #instance_type = "t2.medium"
-  #key_name = "hosanna"
-  #associate_public_ip_address = true
-  #vpc_security_group_ids = [aws_security_group.web.id]
-  #subnet_id = aws_subnet.public.id
-  #tags = {
-      #Name = "bastion host"
-  #}
-#}
 
 resource "time_sleep" "wait_for_user_data_script" {
   create_duration = "5m"
