@@ -1,0 +1,16 @@
+!obj/Docker/empty/
+!obj/Docker/publish/*
+.dockerignore
+.git
+.gitattributes
+.gitignore
+.secret*
+.dockerignore
+Dockerfile
+Dockerfile.*
+Jenkinsfile
+Jenkinsfile.*
+devkit-packages
+devkit
+tmp
+**/*.db
