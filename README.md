@@ -62,7 +62,7 @@ environment. These include (but are not limited to):
   disambiguating. :) It is assumed the files could be sent to the server as application/json,
   thus the server receives them as JSON docs.
   * Side note: I've been playing with Flask RestX recently (https://flask-restx.readthedocs.io/) it
-    would be fun crate a model for this JSON in schema using that.
+    would be fun to create a model for this JSON in schema using that.
 * The docker container could have been deployed in EKS, or even as a Lambda deployment to talk
   to the back-end database. There is nothing (yet) about this application which requires persistent
   instances. I will freely admit to not having any Kubernetes experience, nor any AWS/EKS experience.
@@ -79,7 +79,7 @@ environment. These include (but are not limited to):
 RANT
 
 t2.micro instances are JUNK. They are in the free tier, so I tried using that. I must have burned
-at least an hour, maybe two hours,trying to figure out why it wasn't working. No response in the
+at least an hour, maybe two hours, trying to figure out why it wasn't working. No response in the
 local connection screen (web ssh). Then I switched to t2.medium...and it came right up. Grrr...
 
 END RANT
