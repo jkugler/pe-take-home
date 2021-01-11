@@ -17,10 +17,10 @@ The following tools will be required to deploy the application:
 ### Prerequisites
 Make sure your AWS credentials are in the environment via the following (bash) commands:
 
-`
+```
 export AWS_ACCESS_KEY_ID="anaccesskey"
 export AWS_SECRET_ACCESS_KEY="asecretkey"
-`
+```
 
 ### Deploying
 #### Creating the docker container
